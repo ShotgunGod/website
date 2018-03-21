@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<title>my website</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {margin: 0;}
+
+<div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+</style>
+</head>
+<body background="http://www.obaasima.com/i/2017/04/amazing-graffiti-wallpaper-high-quality.jpg">
+
+<ul class="topnav">
+  <li><a href="//melville-high.school.nz/student/home/dm14044/Desktop/Responsive%20Website/Index/Index.html">Home</a></li>
+  <li><a class="active" href="#Bader">Bader</a></li>
+  <li><a href="">Town</a></li>
+  <li class="right"><a href="#about">About</a></li>
+   <li><a href="">Gallery</a></li>
+</ul>
+
+<div style="padding:0 16px;">
+</div>
+
+<center>
+<h1><font color="White">The Bader Area</font></h1>
+<p><font color="White"></font></p>
+</center>
+<div class="left" style="max-width:500px; text-align:right;">
+
+  <img class="mySlides" src="file://melville-high.school.nz/student/home/dm14044/Desktop/12dte/AS91370/Assessment/images/edited%20pics/20170622_154804_resized.jpg" style="width:100%">
+  <img class="mySlides" src="file://melville-high.school.nz/student/home/dm14044/Desktop/12dte/AS91370/Assessment/images/edited%20pics/20170622_154837_resized.jpg" style="width:100%">
+  <img class="mySlides" src="file://melville-high.school.nz/student/home/dm14044/Desktop/12dte/AS91370/Assessment/images/edited%20pics/20170622_154910_resized.jpg" style="width:100%">
+  <img class="mySlides" src="file://melville-high.school.nz/student/home/dm14044/Desktop/12dte/AS91370/Assessment/images/edited%20pics/20170622_174033.jpg" style="width:100%">
+</div>
+<script src="../Main.js"></script>
+</body>
+</html>

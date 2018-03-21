@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<title>my website</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+</style>
+</head>
+<body background="http://www.obaasima.com/i/2017/04/amazing-graffiti-wallpaper-high-quality.jpg">
+
+<ul class="topnav">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="//melville-high.school.nz/student/home/dm14044/Desktop/Responsive%20Website/Page%201/Main.html">Bader</a></li>
+  <li><a href="">Town</a></li>
+  <li class="right"><a href="#about">About</a></li>
+   <li><a href="">Gallery</a></li>
+</ul>
+
+<div style="padding:0 16px;">
+</div>
+
+<div class="w3-content w3-section" style="max-width:1000px; text-align:right;">
+
+  <img class="mySlides w3-animate-fading" src="http://media02.hongkiat.com/cool-street-art/street-art-norway.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="file://melville-high.school.nz/student/home/dm14044/Desktop/12dte/AS91370/Assessment/images/edited%20pics/20170622_154804_resized.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="http://www.dolcevitaonline.it/wp-content/uploads/2014/03/img28.jpg" style="width:100%">
+
+<center>
+<h1><font color="White">Hamilton Ink</font></h1>
+<p><font color="White">A page about the best street art Hamilton has to offer</font></p>
+</center>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 9000);
+}
+</script>
+
+</body>
+</html>
